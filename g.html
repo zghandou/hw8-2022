@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <title>Art</title>
+</head>
+<body>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <header>
+        <nav>
+            <ul>
+              <li><a href="index.html">home</a></li>
+              <li><a href="z.html">my art</a></li>
+              <li><a href="g.html">inspiration</a></li>
+            </ul>
+          </nav>
+        <h1>Zeinab's Project</h1>
+    </header>
+
+    <body>
+        <main id="main">
+        <div class="controls">
+            <button type="button" class="control" data-filter="all">All</button>
+            <button type="button" class="control" data-filter=".latte">Oil Painting</button>
+            <button type="button" class="control" data-filter=".dark">Digital</button>
+            <button type="button" class="control" data-filter=".decaf">Idk</button>
+            <button type="button" class="control" data-filter="none">None</button>
+
+            <button type="button" class="control" data-sort="default:asc">Asc</button>
+            <button type="button" class="control" data-sort="default:desc">Desc</button>
+        </div>
+
+        <div class="container gallery">
+            <figure class = "mix dark" data-orrder="1">
+                <img src="images/waterlilles.jpeg" alt="3 cups of coffee one with cream, one without, and a cookie">
+                <figcaption> Title Year</figcaption>
+            </figure>
+
+            <figure class="mix latte" data-orrder="2">
+                <img src="images/venz.jpeg" alt="flat white coffee with a small spoon on a saucer">
+                <figcaption>Title Year</figcaption>
+            </figure>
+    
+             <figure class= "mix decaf latte" data-orrder="3">
+                <img src="images/Starry_Night_Over_the_Rhone.jpeg" alt="cappuccino with small hearts drawn on the top in milk foam">
+                <figcaption>Title Year</figcaption>
+
+            </figure> 
+
+            <figure class = "mix dark" data-orrder="4">
+                <img src="images/flowers.jpeg" alt="two cups of coffee one is a large latte with a heart in the milk foam the other is a small shot of espresso">
+                <figcaption>Title Year</figcaption>
+
+            </figure>
+
+           <figure class = "mix dark decaf" data-orrder="5">
+                <img src="images/jojo.jpeg" alt="cup of hot coffee with lots of milk and three oatmeal cookies">
+                <figcaption>Title Year</figcaption>
+
+            </figure>
+
+            <figure class = "mix latte" data-orrder="6">
+                <img src="images/onenhillion.jpg" alt="two shots of espresso being extracted into small cups">
+                <figcaption>Title Year</figcaption>
+
+            </figure>
+
+            <figure class = "mix latte" data-orrder="6">
+                <img src="images/enviep1.jpeg" alt="two shots of espresso being extracted into small cups">
+                <figcaption>Title Year</figcaption>
+
+            </figure>
+
+            <figure class = "mix decaf" data-orrder="7">
+                <img src="images/oph.jpeg" alt="cup of black coffee sitting on a bed of coffee beans">
+                <figcaption>Title Year</figcaption>
+
+            </figure>
+
+            <figure class = "mix decaf" data-orrder="7">
+                <img src="images/dayrisfelix.jpg" alt="cup of black coffee sitting on a bed of coffee beans">
+                <figcaption>Title Year</figcaption>
+
+            </figure>
+        </div>
+    </main>
+    </body>
+
+    <script src="js/mixitup.min.js"></script>
+
+    <script>
+        var containerEl = document.querySelector('.container');
+
+        var mixer = mixitup(containerEl);
+    </script>
+   
+
+    </main>
+    <footer>
+        <p>University of Michigan School of Information <br/>
+          &copy; Zeinab Ghandour - Web Design Fall 2022</p>
+      </footer>
+    
+</body>
+</html>
