@@ -120,6 +120,9 @@ html{
       border-radius: 20%;
   }
   .gallery1 p{
+      background-color: #ffffff;
+      border-radius: 10%;
+      padding: 10px 10px 10px 10px;
       font-size: 20px;
       color: #7d6456;
       text-align: center;
