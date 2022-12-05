@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <title>Art</title>
+</head>
+<body>
+    <a class="skip" href="#skip">Skip to Main Content</a>
+    <header>
+        <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="myart.html">My Art</a></li>
+              <li><a href="inspo.html">Inspiration</a></li>
+            </ul>
+          </nav>
+        <h1>Zeinab's Project</h1>
+    </header>
+
+    <body>
+        <main id="skip">
+        <div class="controls">
+            <button type="button" class="control" data-filter="all">All</button>
+            <button type="button" class="control" data-filter="none">None</button>
+            <button type="button" class="control" data-filter=".traditional">Traditional</button>
+            <button type="button" class="control" data-filter=".digital">Digital</button>
+        </div>
+
+        <div class="gallery2">
+            <figure class = "mix traditional" data-order="0">
+                <img src="images/waterlilles.jpeg" width = "200" alt="3 cups of coffee one with cream, one without, and a cookie">
+                <figcaption>Water Lilies- Claude Monet 1919</figcaption>
+            </figure>
+
+            <figure class="mix traditional" data-order="1">
+                <img src="images/venz.png"  width = "200" alt="flat white coffee with a small spoon on a saucer">
+                <figcaption>The Feast of the Redeemer in Venice- Ferruccio Scattola 1909
+                </figcaption>
+            </figure>
+    
+             <figure class= "mix traditional" data-order="2">
+                <img src="images/Starry_Night_Over_the_Rhone.jpeg"  width = "200" alt="cappuccino with small hearts drawn on the top in milk foam">
+                <figcaption>Starry Night Over the Rhône- Vincent van Gogh 1888
+                </figcaption>
+
+            </figure> 
+
+            <figure class = "mix traditional" data-order="3">
+                <img src="images/flowers.jpeg"  width = "200" alt="two cups of coffee one is a large latte with a heart in the milk foam the other is a small shot of espresso">
+                <figcaption>Étienne Adolphe Piot- Jeune Femme 1850 </figcaption>
+
+            </figure>
+
+           <figure class = "mix digital" data-order="4">
+                <img src="images/jojo.jpeg"  width = "200" alt="cup of hot coffee with lots of milk and three oatmeal cookies">
+                <figcaption> Paralympics - Hirohiko Araki 2020</figcaption>
+
+            </figure>
+
+            <figure class = "mix digital" data-order="5">
+                <img src="images/onenhillion.jpg"  width = "200" alt="two shots of espresso being extracted into small cups">
+                <figcaption>instagram: @onenhillion 2022</figcaption>
+
+            </figure>
+
+            <figure class = "mix digital" data-order="6">
+                <img src="images/enviep1.jpeg"  width = "200" alt="two shots of espresso being extracted into small cups">
+                <figcaption>instagram: @enviep1 2021</figcaption>
+
+            </figure>
+
+            <figure class = "mix traditional" data-order="7">
+                <img src="images/oph.jpeg"  width = "200" alt="cup of black coffee sitting on a bed of coffee beans">
+                <figcaption>Ophelia - Sir John Everett Millais 1851 </figcaption>
+
+            </figure>
+
+            <figure class = "mix traditional" data-order="8">
+                <img src="images/dayrisfelix.jpg"  width = "200" alt="cup of black coffee sitting on a bed of coffee beans">
+                <figcaption>instagram: @dayrisfelix 2020</figcaption>
+
+            </figure>
+        </div>
+    </main>
+    </body>
+
+    <script src="js/mixitup.min.js"></script>
+
+    <script>
+        var containerEl = document.querySelector('.gallery2');
+
+        var mixer = mixitup(containerEl);
+    </script>
+   
+
+    </main>
+    <footer>
+        <p>University of Michigan School of Information <br/>
+          &copy; Zeinab Ghandour - Web Design Fall 2022</p>
+      </footer>
+    
+</body>
+</html>
