@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/pocho-removebg-preview.png">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <title>Art</title>
+</head>
+<body>
+    <a class="skip" href="#skip">Skip to Main Content</a>
+    <header>
+        <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="myart.html">My Art</a></li>
+              <li class = "active"><a href="inspo.html">Inspiration</a></li>
+            </ul>
+          </nav>
+          <h1> Where I find inspiration: </h1>
+          <h1>.・。.・゜✭・.・✫・゜・。.</h1>
+    </header>
+
+    <body>
+        <main id="skip">
+        <div class="controls">
+            <p>I am inspired by all things beautiful, I generally love soft painted pieces that capture a feeling of nostalgia or dream. I have included art 
+                that I admire as well as music (at the bottom) that contributes to my creativity. </p>
+            <button type="button" class="control" data-filter="all">All</button>
+            <button type="button" class="control" data-filter="none">None</button>
+            <button type="button" class="control" data-filter=".traditional">Traditional</button>
+            <button type="button" class="control" data-filter=".digital">Digital</button>
+        </div>
+
+        <div class="gallery2">
+            <figure class = "mix traditional" data-order="0">
+                <img src="images/waterlilles.jpeg" width = "400" alt="painting of waterlilies in a pond">
+                <figcaption>Water Lilies- Claude Monet 1919</figcaption>
+            </figure>
+
+            <figure class="mix traditional" data-order="1">
+                <img src="images/venz.png"  width = "400" alt="painting of Venice in the night">
+                <figcaption>The Feast of the Redeemer in Venice- Ferruccio Scattola 1909
+                </figcaption>
+            </figure>
+    
+             <figure class= "mix traditional" data-order="2">
+                <img src="images/Starry_Night_Over_the_Rhone.jpeg"  width = "400" alt="painting of stars in the sky">
+                <figcaption>Starry Night Over the Rhône- Vincent van Gogh 1888
+                </figcaption>
+
+            </figure> 
+
+            <figure class = "mix traditional" data-order="3">
+                <img src="images/flowers.jpeg"  width = "400" alt="painting of a woman holding flowers">
+                <figcaption>Étienne Adolphe Piot- Jeune Femme 1850 </figcaption>
+
+            </figure>
+
+           <figure class = "mix digital" data-order="4">
+                <img src="images/jojo.jpeg"  width = "400" alt="drawing o two people running on clouds with waves in the sky">
+                <figcaption> Paralympics - Hirohiko Araki 2020</figcaption>
+
+            </figure>
+
+            <figure class = "mix digital" data-order="5">
+                <img src="images/onenhillion.jpg"  width = "400" alt="drawing of a young child smiling with sun ray on them">
+                <figcaption>instagram: @onenhillion 2022</figcaption>
+
+            </figure>
+
+            <figure class = "mix digital" data-order="6">
+                <img src="images/enviep1.jpeg"  width = "400" alt="painting of three people together with purple sky">
+                <figcaption>instagram: @enviep1 2021</figcaption>
+
+            </figure>
+
+            <figure class = "mix traditional" data-order="7">
+                <img src="images/oph.jpeg"  width = "400" alt="woman laying in pond with flowers around her">
+                <figcaption>Ophelia - Sir John Everett Millais 1851 </figcaption>
+
+            </figure>
+
+            <figure class = "mix traditional" data-order="8">
+                <img src="images/dayrisfelix.jpg"  width = "400" alt="painting of the moon and stars">
+                <figcaption>instagram: @dayrisfelix 2020</figcaption>
+
+            </figure>
+        <iframe title="myFrame" src="https://open.spotify.com/embed/album/26bQ8ka40C7SjHhqyNrqoj?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+        </div>
+    </main>
+    </body>
+
+    <script src="js/mixitup.min.js"></script>
+
+    <script>
+        var containerEl = document.querySelector('.gallery2');
+
+        var mixer = mixitup(containerEl);
+    </script>   
+
+    </main>
+    <footer>
+        <p>University of Michigan School of Information <br/>
+          &copy; Zeinab Ghandour - Web Design Fall 2022</p>
+      </footer>
+    
+</body>
+</html>
